@@ -1,0 +1,282 @@
+
+.navbar-brand{
+	font-family: 'Gochi Hand', cursive;
+	text-shadow: 2px 2px 4px #00BFFF;
+}
+
+body{
+	background-color: #343a40;
+	color: white;
+}
+nav{
+	position: sticky;
+}
+
+ul li a{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+ul:hover li a{
+opacity: 0;
+}
+
+ul li a:hover{
+	transform: scale(1.2);
+	z-index: 1000;
+	opacity: 1;
+	background-color: #ff3f81;
+	transition: 0.2s;
+
+}
+
+.jumbotron{
+	background-color: #343a40;
+	/*background-image: linear-gradient(to bottom right, #343a40,#000080, blue);*/
+	color: white;
+	text-align: justify;
+	margin-top: 50px;
+	z-index: 10000;
+}
+
+.jumbotron .title h1{
+	font-family: 'Gochi Hand', cursive;
+	text-shadow: 2px 2px 4px #00BFFF;
+}
+
+.jumbotron:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00BFFF;
+	clip-path: circle(150px at 80% 20%);
+	transition: 0.5s ease-in-out;
+	z-index: 1000;
+}
+
+.jumbotron:hover:before{
+	clip-path: circle(250px at 80% -20%);
+
+}
+
+.profil{
+	margin-bottom: 6px;
+	text-align: justify;
+	letter-spacing: 4px;
+
+}
+
+.profil h3{
+	letter-spacing: 8px;
+	margin-bottom: 16px;
+}
+
+.profil p{
+	line-height: 25px;
+}
+
+.profil .bola:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #F08080;
+	clip-path: circle(80px at 40% 50%);
+	transition: 0.5s ease-in-out;
+}
+
+.profil .bola:hover:before{
+	clip-path: circle(100px at 80% 40%);
+	background: #ff3f81;
+
+}
+
+.project{
+	margin-bottom: 3px;
+	text-align: justify;
+	padding: 15px;
+	/*background-image:linear-gradient(to top right, #F8F8FF, #fff);*/
+}
+
+.project h3{
+	margin-bottom: 16px;
+}
+
+.card{
+	background-color: #343a40;
+	border: 2px solid #fff;
+	border-radius: 8px 8px 8px 8px;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+	/*background-color: #ff3f81;*/
+	border: none;
+	transform: scale(1.02);
+	transition: 0.2s;
+	box-shadow: 4px 4px 10px #00BFFF;
+}
+
+
+.card figure{
+	z-index: 1000;
+}
+
+.card:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00BFFF;
+	clip-path: circle(80px at 100% 100%);
+	transition: 0.5s ease-in-out;	
+}
+
+.card:hover:before{
+	clip-path: circle(190px at 100% 100%);
+
+}
+
+figure figcaption .button{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.contact h3{
+	margin-bottom: 16px;
+}
+
+.contact img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+
+footer{
+	padding-top: 45px;
+	text-align: center;
+	background-color: #333;
+	height: 100px;
+	color: white;
+}
+
+
+
+
+
+
+
+/*resposive view*/
+@media (max-width: 575.98px){
+	ul li{
+		z-index: 12000;
+		text-align: center;
+	}
+
+	ul li a:hover{
+		transform: scale(1.02);
+		text-align: center;
+
+	}
+
+	.title{
+		z-index: 1000;
+	}
+
+	.profil:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #00FA9A;
+		clip-path: circle(50px at 30% 80%);
+		transition: 0.5s ease-in-out;
+
+	}
+
+	.profil:hover:before{
+		background: #00BFFF;
+		clip-path: circle(70px at 30% 80%);
+
+	}
+  
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	ul li{
+		z-index: 12000;
+		text-align: center;
+	}
+
+	ul li a:hover{
+		transform: scale(1.02);
+		text-align: center;
+
+	}
+
+
+	.title{
+		z-index: 1000;
+	}
+
+	.profil:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #00FA9A;
+		clip-path: circle(50px at 30% 90%);
+		transition: 0.5s ease-in-out;
+	
+	}
+
+	.profil:hover:before{
+		background: #00BFFF;
+		clip-path: circle(70px at 30% 90%);
+
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	ul li{
+		z-index: 12000;
+		text-align: center;
+	}
+
+	ul li a:hover{
+		transform: scale(1.02);
+		text-align: center;
+
+	}
+
+	.jumbotron{
+		text-align: left;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+      
+}
